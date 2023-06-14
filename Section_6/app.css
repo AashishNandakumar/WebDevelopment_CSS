@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+    font-weight: bold;
+    /* give a nice underline */
+    text-decoration: gold underline wavy;
+    /* make words uppercase */
+    text-transform: uppercase;
+}
+
+h3 {
+    color: rgb(255, 100, 50);
+    background-color: aquamarine;
+    text-decoration: blue underline;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 129, 22);
+}
+
+button {
+    color: blueviolet;
+    background-color: #a9ace3;
+}
+
+p {
+    /* syan == cyan :) */
+    color: cadetblue;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+    font-size: large;
+    font-family: 'Goudy Bookletter 1911', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0ebeb;
+}
