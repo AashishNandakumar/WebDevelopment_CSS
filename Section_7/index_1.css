@@ -1,0 +1,66 @@
+/* UNIVERSAL SELECTOR */
+* {
+    background-color: #aad4e6;
+    font-family: 'Goudy Bookletter 1911', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+/* ELEMENT SELECTORS(multiple) */
+h1, h2 {
+    color: #023047;
+    text-align: center;
+    text-decoration: #023047 underline;
+}
+
+hr {
+    border: 5px solid #cdb4db;
+}
+
+/*ID SELECTORS (hooking CSS to a particular element) */
+#navButton1 {
+    background-color: #ffafcc;
+}
+
+/* CLASS SELECTORS */
+.imp {
+    color: #606c38;
+    background-color: #fefae0;
+}
+
+/* DESCENDENT SELECTORS(target an element that is nested inside other element, target the anchor tags present inside li elements only) */
+/* Donot give commas */
+li a {
+    text-decoration: none;
+    background-color: #e9c46a;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+}
+
+/* ADJACENT SELECTORS OR COMBINATORS(selects an element y, that are immediately preceeded by x) */
+h3+button {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+/* DIRECT DESCENDENDENT SELECTORS(target elements inside other elements - immediate) */
+.sel>a {
+    color: #57cc99;
+    background-color: #22577a;
+}
+
+/* ATTRIBUTE SELECTORS (select a particular element of a specific type) */
+input[type="password"] {
+    color: #226a4b;
+}
+
+/* select the section of class - "credentials" */
+section.credentials {
+    background-color: #80ed99;
+}
+
+/* target href(of anchor tag)containing "google" */
+a[href*="google"] {
+    color: #22577a;
+    background-color: #b770e1;
+}
