@@ -64,3 +64,30 @@ a[href*="google"] {
     color: #22577a;
     background-color: #b770e1;
 }
+
+/* PSEUDO CLASSES (keyword added to a selector, that specifies a special state of selected elements)*/
+a:hover {
+    background-color: #57cc99;
+}
+
+.pseudo button:hover {
+    text-decoration: line-through;
+    background-color: #b770e1;
+}
+
+.pseudo button:active {
+    background-color: #226a4b;
+    text-decoration: none;
+}
+
+/* targets every even element */
+.pseudo :nth-of-type(2n) {
+    background-color: #e9c46a;
+    line-height: 1.5;
+}
+
+/* targets every odd element */
+.pseudo section:nth-of-type(2n-1) {
+    background-color: #574519;
+    line-height: 1.5;
+}
