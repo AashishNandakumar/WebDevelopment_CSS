@@ -6,10 +6,20 @@
 }
 
 /* ELEMENT SELECTORS(multiple) */
-h1, h2 {
+h2 {
     color: #023047;
     text-align: center;
     text-decoration: #023047 underline;
+}
+
+h1 {
+    color: #023047;
+    text-align: center;
+}
+
+h1:hover {
+    text-decoration: underline;
+    cursor: crosshair;
 }
 
 hr {
@@ -90,4 +100,43 @@ a:hover {
 .pseudo section:nth-of-type(2n-1) {
     background-color: #574519;
     line-height: 1.5;
+}
+
+/* PSEUDO ELEMENTS */
+/* Make the first letter bigger */
+.pseudoEle>p::first-letter {
+    /* make this style important, gives the topmost specificity */
+    font-size: x-large !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* target the first line */
+.pseudoEle>p::first-line {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #226a4b;
+
+}
+
+/* target the highlight color */
+.pseudoEle p::selection {
+    background-color: #7e37a8;
+    text-decoration: underline;
+}
+
+/* CSS INHERITANCE */
+/* the child elements inherit styles from parents if they donot have a predefined stylings */
+#inheri {
+    color: #57cc99;
+}
+
+#inheri>h3 {
+    color: black !important;
+
+}
+
+#inheri>button {
+    background-color: #574519;
+    /* inherit the property of the parent */
+    color: inherit;
 }
