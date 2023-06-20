@@ -140,3 +140,50 @@ a:hover {
     /* inherit the property of the parent */
     color: inherit;
 }
+
+
+/* BOX MODEL */
+section {
+    width: 100%;
+}
+
+#btnBox {
+    height: 50px;
+    background-color: #87a429;
+    color: white;
+
+    /* BORDER PROPERTIES */
+    border-width: 8px;
+    border-color: #e63946;
+    border-style: groove;
+    border-radius: 10px;
+
+    /* one line stylings for border */
+    /* width | style | color */
+    border: 3px solid rgb(155, 63, 63);
+}
+
+#btnBox:hover {
+    background-color: #e63946;
+
+    border-color: #21a169;
+}
+
+/* simple dog profile */
+#cardDog {
+    width: 220px;
+    background-color: #f1faee;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#cardDog h1 {
+    background-color: inherit;
+}
+
+img {
+    width: 190px;
+    border: 5px solid rgb(212, 62, 87);
+    border-radius: 50%;
+}
