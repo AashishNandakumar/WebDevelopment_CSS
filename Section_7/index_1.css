@@ -187,3 +187,131 @@ img {
     border: 5px solid rgb(212, 62, 87);
     border-radius: 50%;
 }
+
+/* PADDING: The distance between content and border */
+#paddingDemo h3 {
+    background-color: #57cc99;
+    padding: 10px;
+}
+
+#paddingDemo button {
+    width: 400px;
+    background-color: #e63946;
+    color: #e8ddc0;
+    /* Different types of padding application */
+    /* Vertical | Horizontal */
+    /* top | horizontal | bottom */
+    /* top | right | bottom | left */
+    /* all sides */
+    padding: 40px;
+}
+
+#paddingDemo button:hover {
+    background-color: #574519;
+}
+
+/* MARGIN : distance between elements */
+#marginDemo button {
+    width: 400px;
+    height: 100px;
+    background-color: #e63946;
+    color: #e8ddc0;
+
+    /* Different types of margin application */
+    /* Vertical | Horizontal */
+    /* top | horizontal | bottom */
+    /* top | right | bottom | left */
+    /* all sides */
+    margin: 15px;
+    margin-left: 0;
+}
+
+#marginDemo button:hover {
+    background-color: #b56510;
+}
+
+#marginDemo button:active {
+    background-color: #58e417;
+}
+
+/* DISPLAY: property */
+#displayDemo button {
+    width: 400px;
+    height: 100px;
+    background-color: #e63946;
+    color: #e8ddc0;
+    margin: 15px;
+    margin-left: 0;
+    /* make it inline */
+    display: inline;
+}
+
+#displayDemo h3 {
+    background-color: #21a169;
+    padding: 10px;
+}
+
+#displayDemo span {
+
+    background-color: #87a429;
+    /* make it block */
+    display: block;
+}
+
+/* display: inline-block: the element is an inline ele, but all box=model properties are applicable */
+#inlineBlocks div {
+    background-color: #90ae2e;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+#inlineBlocks div:nth-of-type(3):active {
+    /* hide the element */
+    display: none;
+}
+
+/* CSS UNITS */
+/* Relative units */
+
+/* 1. % */
+#cssUnits1 div {
+    background-color: #7e37a8;
+    width: 800px;
+    height: 400px;
+}
+
+#cssUnits1 div>div {
+    background-color: #16546e;
+    /* Dependent on parent */
+    width: 50%;
+    height: 50%;
+    /* independent of parent, 50% of original line height */
+    line-height: 200%;
+    color: #aad4e6;
+}
+
+/* 2. em */
+/* to make responsive websites, u want some elements to grow in size when other elements are scaling too */
+#cssUnits1 #Div2>div {
+    font-size: 1em;
+}
+
+/* drawbacks: They grow and shrink very fast(inside nested lists) */
+/* 3. rem */
+#div3 {
+    background-color: #7e37a8;
+    width: 800px;
+    height: 400px;
+}
+
+#div3>div {
+    background-color: #16546e;
+    width: 50%;
+    height: 50%;
+    color: #aad4e6;
+    line-height: 200%;
+    /* depends on font size of html element */
+    font-size: 1rem;
+}
