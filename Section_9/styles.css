@@ -228,3 +228,44 @@ section {
     box-shadow: 0 0.7em 0.6em -0.4em #f1ff5c;
     transform: translateY(-0.25em);
 }
+
+/* BACKGROUND */
+
+.BackGroundSec {
+    height: 44em;
+}
+
+.BackGroundSec div {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: aquamarine;
+    /* add the BG image */
+    background-image: url("https://images.unsplash.com/photo-1648461399064-b2d24952aeda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* GOOGLE FONTS - FREE */
+.googleFontsSec {
+    height: 900px;
+}
+
+.googleFontsSec div:nth-of-type(1) p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.googleFontsSec div:nth-of-type(2) p {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+
+.googleFontsSec div:nth-of-type(3) p {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
