@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -8,7 +12,7 @@ hr {
 
 section {
     width: 100%;
-    height: 300px;
+    height: 500px;
     background-color: bisque;
 }
 
@@ -125,4 +129,102 @@ section {
 
 #trDemoSec:hover div {
     margin-left: 595px;
+}
+
+/* TRANSFORMATION */
+
+
+.TransformationSec div {
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.TransformationSec div h3 {
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid black;
+    width: 20%;
+    /* centering a element in a container(auto to horizontal) */
+    margin: 20px auto;
+}
+
+.TransformationSec>div:nth-of-type(1) h3:nth-of-type(1) {
+    background-color: cadetblue;
+
+    /* change the transformation origin */
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+}
+
+.TransformationSec>div:nth-of-type(1) h3:nth-of-type(2) {
+    background-color: rgb(159, 202, 50);
+
+    transform: scale(0.7);
+}
+
+.TransformationSec>div:nth-of-type(1) h3:nth-of-type(3) {
+    background-color: rgb(26, 142, 155);
+
+    transform: translateX(200px);
+}
+
+.TransformationSec>div:nth-of-type(1) h3:nth-of-type(4) {
+    background-color: rgb(155, 108, 26);
+
+    transform: translateY(2rem);
+}
+
+.TransformationSec>div:nth-of-type(2) h3:nth-of-type(1) {
+    background-color: rgb(155, 26, 134);
+
+    transform: skew(45deg, -3deg);
+}
+
+.TransformationSec>div:nth-of-type(2) h3:nth-of-type(2) {
+    background-color: rgb(58, 26, 155);
+
+    /* Apply two tranform properties at one go */
+    transform: rotate(30deg) scale(0.5);
+}
+
+.TransformationSec>div:nth-of-type(2) h3:nth-of-type(3) {
+    background-color: rgb(26, 155, 136);
+
+    transform: translate(30px, 20px) scale(0.9);
+}
+
+.TransformationSec>div:nth-of-type(2) h3:nth-of-type(4) {
+    background-color: rgb(206, 197, 28);
+
+    transform: translate(-60px, 20px) scale(0.9) rotate(180deg);
+}
+
+
+/* FANCY BUTTON */
+
+.FancyBtnSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 5, 5);
+}
+
+.FancyBtnSec button {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.35s;
+    letter-spacing: 0.15em;
+}
+
+.FancyBtnSec button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    cursor: pointer;
+    /* box shadow */
+    box-shadow: 0 0.7em 0.6em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
 }
