@@ -1,0 +1,23 @@
+/* body {
+    margin: 1px;
+} */
+
+img {
+    width: 30%;
+    /* perform mathematical operations */
+    margin: calc(10%/6);
+
+
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px solid #a68f8f;
+    width: 20%;
+    margin-left: calc(10%/6);
+    padding: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: x-large;
+    margin-bottom: 1.5%;
+}
