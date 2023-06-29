@@ -1,0 +1,51 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    /* FLEXBOX */
+    display: flex;
+
+    /* flex-direction: defines how the content flows in the body */
+    flex-direction: row;
+    /* *flex-direction: column-reverse; */
+
+    /* justify-content: defines how the contents flows in the main axis  */
+    justify-content: center;
+    justify-content: space-evenly;
+
+    /* flex-wrap: defines whether elements are forced into one line or can wrap into multiple lines */
+    flex-wrap: wrap;
+
+    /* align-items: defines how the contents flows in the cross axis, depends on flex-wrap */
+    align-items: flex-start;
+    /* *align-items: baseline; */
+
+    /* align-content:   defines how the contents flows in the cross axis */
+    /* *align-content: space-evenly; */
+
+
+
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+
+}
+
+div:nth-of-type(2n) {
+    /* align-self: works on an individual(well depends on how u group them) component */
+    align-self: flex-end;
+}
