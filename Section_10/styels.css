@@ -10,42 +10,62 @@ h1 {
 #container {
     background-color: #003049;
     width: 90%;
-    height: 600px;
+    height: 200px;
     margin: 0 auto;
     border: 5px solid #003049;
 
-    /* FLEXBOX */
+    /* *FLEXBOX */
     display: flex;
 
-    /* flex-direction: defines how the content flows in the body */
+    /* *flex-direction: defines how the content flows in the body */
     flex-direction: row;
-    /* *flex-direction: column-reverse; */
+    /* flex-direction: column-reverse; */
 
-    /* justify-content: defines how the contents flows in the main axis  */
+    /* *justify-content: defines how the contents flows in the main axis  */
     justify-content: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
-    /* flex-wrap: defines whether elements are forced into one line or can wrap into multiple lines */
-    flex-wrap: wrap;
+    /* *flex-wrap: defines whether elements are forced into one line or can wrap into multiple lines */
+    /* flex-wrap: wrap; */
 
-    /* align-items: defines how the contents flows in the cross axis, depends on flex-wrap */
+    /* *align-items: defines how the contents flows in the cross axis, depends on flex-wrap */
     align-items: flex-start;
-    /* *align-items: baseline; */
+    /* align-items: baseline; */
 
-    /* align-content:   defines how the contents flows in the cross axis */
-    /* *align-content: space-evenly; */
-
-
-
+    /* *align-content:   defines how the contents flows in the cross axis */
+    /* align-content: space-evenly; */
 }
 
 #container div {
     width: 200px;
     height: 200px;
 
+    /* *defines Initial size of element before additional space is distributed(only applies on the main axis) */
+    flex-basis: 600px;
+
+
+
 }
 
 div:nth-of-type(2n) {
     /* align-self: works on an individual(well depends on how u group them) component */
-    align-self: flex-end;
+    /* align-self: flex-end; */
+}
+
+div:nth-of-type(1) {
+    /* *Controls the space an element should take  */
+    flex-grow: 1;
+
+    /* *Controls how the elements shrink when its size is greater than the container */
+    flex-shrink: 2;
+}
+
+div:nth-of-type(2) {
+    /* *Controls the space an element should take  */
+    flex-grow: 2;
+}
+
+div {
+    /* control the growth */
+    max-width: 300px;
 }
