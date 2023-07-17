@@ -69,3 +69,23 @@ div {
     /* control the growth */
     max-width: 300px;
 }
+
+/* flex(short hand notation): flex-grow | flex-shrink | flex-basis */
+main {
+    display: flex;
+    border: 5px solid black;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    /* flex grow | flex shrink | flex basis */
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 900px;
+}
