@@ -89,3 +89,47 @@ main .maincontent {
     background-color: #80ffdb;
     flex: 2 900px;
 }
+
+/* MEDIA QUERIES */
+
+.mediaQueries1 h1 {
+    color: aqua;
+}
+
+/* if it is below 800px and above 400 px this property is applied */
+@media (max-width: 800px) {
+    .mediaQueries1 h1 {
+        font-size: 4em;
+    }
+
+    nav, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .mediaQueries1 h1 {
+        font-size: 2.5em;
+    }
+}
+
+ul, li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /* border: 3px solid red; */
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mediaQueries1 nav {
+    display: flex;
+    justify-content: space-between;
+}
